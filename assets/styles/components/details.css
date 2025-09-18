@@ -10,7 +10,7 @@ details{
       width: var(--size-l);
       height: var(--size-l);
       padding-right: var(--size-xxs);
-      color: var(--interaction-color);
+      color: var(--color-pink);
       content: "chevron_right";
       direction: ltr;
       font-family: var(--font-icons);
@@ -28,6 +28,10 @@ details{
       transition: transform .2s ease-in-out;
       white-space: nowrap;
       word-wrap: normal;
+    }
+
+    h3{
+      color: var(--color-darker)
     }
 
     &:hover {
