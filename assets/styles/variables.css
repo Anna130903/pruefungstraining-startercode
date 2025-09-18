@@ -55,11 +55,11 @@
   /* Functional Colors */
   --interaction-color: var(--color-dark);
   --decoration-color: var(--color-pink);
-  --icon-color: var(--color-blue);
+  --icon-color: var(--color-green);
   --text-color: var(--color-darker);
   --headline-color: var(--color-darkblue);
   --headline-color-light: var(--color-steingrau);
-  --border-color: var(--color-lichtgrau);
+  --border-color: var(--color-blue);
   --seperator-color: var(--color-light);
   --background-color: var(--color-lighter);
 
