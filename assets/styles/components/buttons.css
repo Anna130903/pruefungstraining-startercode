@@ -35,7 +35,9 @@
   }
 }
 
+.show-more-button,
 .pink-button{
+  margin-top: var(--size-l);
   padding: var(--size-s) var(--size-m);
   border-radius: var(--radius-xs);
   background-color: var(--decoration-color);
