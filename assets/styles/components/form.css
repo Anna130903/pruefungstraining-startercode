@@ -3,3 +3,31 @@
 
 /* Form
 ############################################################################ */
+
+
+form {
+  background-color: var( --interaction-color);
+  color: var(--color-lightest);
+
+  p {
+    width: 60%;
+  }
+
+
+  input {
+    display: block;
+    width: 100%;
+    margin: var(--size-s) 0 var(--size-m) 0;
+    padding: var(--size-s);
+    padding-left: 0;
+    color: var(--color-lightest);
+    border-bottom: var(--border-width) solid var(--icon-color);
+    font-size: var(--size-m);
+    font-family: inherit;
+
+    &:focus {
+      border-bottom: var(--border-width) solid var(--decoration-color);
+    }
+  }
+}
+
