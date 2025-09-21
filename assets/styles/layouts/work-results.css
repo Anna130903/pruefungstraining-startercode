@@ -1,2 +1,50 @@
 /* Work Result
 ############################################################################ */
+
+.work-result {
+
+  .header {
+    .title {
+      color: var(--color-green);
+    }
+
+    a:not(.wrap) {
+      border-bottom: solid 2px var(--color-green);
+    }
+  }
+
+  .work-header-image {
+    width: 50%;
+    height: auto;
+  }
+
+  .content-work-results {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    width: 70%;
+
+    .work-subtitle {
+      color: var(--color-dark)
+    }
+
+    .facts-list {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      .fact-item {
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: solid 2px var(--color-green);
+
+        a {
+          border:none;
+          color: var(--decoration-color);
+        }
+      }
+
+    }
+  }
+
+
+
+}
