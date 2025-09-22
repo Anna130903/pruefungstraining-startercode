@@ -14,32 +14,48 @@
 
 /* Lightbox Overlay */
 .lightbox {
-  display: none; /* standardmäßig versteckt */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black; /* kompletter schwarzer Hintergrund */
+  background-color: black;
   display: flex;
-  justify-content: center; /* horizontal zentrieren */
-  align-items: center;     /* vertikal zentrieren */
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
 .lightbox-img {
-  max-width: 90%;   /* maximal 90% der Bildschirmbreite */
-  max-height: 90%;  /* maximal 90% der Bildschirmhöhe */
-  object-fit: contain; /* Bild proportional skalieren, keine Verzerrung */
-  border-radius: 0;    /* optional, keine Abrundung */
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .lightbox-close {
-  position: absolute;
   top: 20px;
   right: 30px;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
 }
 
+.lightbox-prev {
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
