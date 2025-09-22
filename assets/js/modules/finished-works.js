@@ -4,7 +4,7 @@ export async function finishedWorks() {
 
   try {
     // JSON laden
-    const response = await fetch("http://localhost:3000/works.json");
+    const response = await fetch("./works.json");
     const works = await response.json();
 
     // neueste Arbeiten sortieren

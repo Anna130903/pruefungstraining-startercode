@@ -1,0 +1,13 @@
+.work-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 1px;
+  width: 90%;
+}
+
+.work-images img {
+  width: 100%;
+  aspect-ratio: 1/1; /* alle Bilder gleich groß, proportional */
+  object-fit: cover; /* Bild füllt den Container aus */
+  display: block;
+}
