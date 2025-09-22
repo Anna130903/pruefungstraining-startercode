@@ -11,3 +11,35 @@
   object-fit: cover; /* Bild füllt den Container aus */
   display: block;
 }
+
+/* Lightbox Overlay */
+.lightbox {
+  display: none; /* standardmäßig versteckt */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* kompletter schwarzer Hintergrund */
+  display: flex;
+  justify-content: center; /* horizontal zentrieren */
+  align-items: center;     /* vertikal zentrieren */
+  z-index: 1000;
+}
+
+.lightbox-img {
+  max-width: 90%;   /* maximal 90% der Bildschirmbreite */
+  max-height: 90%;  /* maximal 90% der Bildschirmhöhe */
+  object-fit: contain; /* Bild proportional skalieren, keine Verzerrung */
+  border-radius: 0;    /* optional, keine Abrundung */
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
