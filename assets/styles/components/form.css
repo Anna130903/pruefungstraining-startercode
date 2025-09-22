@@ -6,7 +6,7 @@
 
 
 form {
-  background-color: var( --interaction-color);
+  background-color: var(--interaction-color);
   color: var(--color-lightest);
 
   p {
@@ -25,9 +25,12 @@ form {
     font-size: var(--size-m);
     font-family: inherit;
 
-    &:focus {
+    &:focus{
       border-bottom: var(--border-width) solid var(--decoration-color);
+      outline: none;
+      color: var(--decoration-color);
+      background-color: var(--interaction-color);
+      transition: border-color 0.3s ease-in-out;
     }
   }
 }
-
