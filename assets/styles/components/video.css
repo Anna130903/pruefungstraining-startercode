@@ -4,6 +4,7 @@
   position: relative;
   max-width: calc(var(--size-image-thumbnail) * 3) !important; 
   aspect-ratio: 16/9;
+  margin-bottom: var(--size-l);
 
   iframe {
     position: absolute;
